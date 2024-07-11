@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Minimum Operations python3 challenge'''
 
+
 def minOperations(n):
     '''calculates the fewest number of
     operations needed to result in exactly n H '''
