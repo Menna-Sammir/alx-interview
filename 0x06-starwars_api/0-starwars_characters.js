@@ -1,6 +1,6 @@
 #!/usr/bin/node
-const request = require("request");
-const API_URL = "https://swapi-api.alx-tools.com/api";
+const request = require('request');
+const API_URL = 'https://swapi-api.alx-tools.com/api';
 
 if (process.argv.length > 2) {
   request(`${API_URL}/films/${process.argv[2]}/`, (err, _, body) => {
@@ -21,7 +21,7 @@ if (process.argv.length > 2) {
     );
 
     Promise.all(charactersName)
-      .then((names) => console.log(names.join("\n")))
+      .then((names) => console.log(names.join('\n')))
       .catch((allErr) => console.log(allErr));
   });
 }
